@@ -1,0 +1,21 @@
+Вариант 4
+Отсортировать массив целых чисел при помощи параллельного алгоритма TimSort.
+
+Требования:
+- Ограничение максимального количества потоков задается ключом запуска программы.
+- Разрешено использовать только POSIX Threads (без std::thread).
+
+Компиляция:
+gcc main.c -o timsort_parallel -lpthread
+
+Проверка количества логических ядер в системе:
+nproc
+
+Запуск тестов для отчета (с разным числом потоков):
+./timsort_parallel 2
+./timsort_parallel 4
+./timsort_parallel 8
+./timsort_parallel 12
+./timsort_parallel 16
+./timsort_parallel 128
+./timsort_parallel 1024
